@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1254677-E813-4B30-8F61-FADFB5C09554}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestTwitter</RootNamespace>
+    <AssemblyName>TestTwitter</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.GData.AccessControl, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b4b8eb9a7afc8328, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.AccessControl.DLL</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Analytics, Version=2.1.0.0, Culture=neutral, PublicKeyToken=9e229226d7996434, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Apps, Version=2.1.0.0, Culture=neutral, PublicKeyToken=e6feebfe441b89cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Apps.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Blogger, Version=2.1.0.0, Culture=neutral, PublicKeyToken=6f8943d33947d761, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Blogger.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Calendar, Version=2.1.0.0, Culture=neutral, PublicKeyToken=aa6748391206b888, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client, Version=2.1.0.0, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Contacts, Version=2.1.0.0, Culture=neutral, PublicKeyToken=7e065189dd4b982f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Contacts.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.ContentForShopping, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.ContentForShopping.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Documents, Version=2.1.0.0, Culture=neutral, PublicKeyToken=e4daaad656f19bb9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Documents.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Photos, Version=2.1.0.0, Culture=neutral, PublicKeyToken=a25b50f2e8e3887a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Photos.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Spreadsheets, Version=2.1.0.0, Culture=neutral, PublicKeyToken=3f77feb76ff0d9a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.Spreadsheets.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.WebmasterTools, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.WebmasterTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.YouTube, Version=2.1.0.0, Culture=neutral, PublicKeyToken=af04a32718ae8833, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Google\Google Data API SDK\Redist\Google.GData.YouTube.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Microsoft SDKs\Kinect\v1.7\Assemblies\Microsoft.Kinect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect.Toolkit">
+      <HintPath>.\Microsoft.Kinect.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Samples.Kinect.WpfViewers">
+      <HintPath>.\Microsoft.Samples.Kinect.WpfViewers.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.5\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Twitterizer2">
+      <HintPath>..\packages\twitterizer.2.4.2\lib\net40-Client\Twitterizer2.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="MvtKinect\Gesture.cs" />
+    <Compile Include="MvtKinect\GestureController.cs" />
+    <Compile Include="MvtKinect\GestureEnumTypes.cs" />
+    <Compile Include="MvtKinect\GestureEventArgs.cs" />
+    <Compile Include="MvtKinect\IRelativeGestureSegment.cs" />
+    <Compile Include="MvtKinect\Segment\JoinedHandsSegment.cs" />
+    <Compile Include="MvtKinect\Segment\Menu\MenuSegments.cs" />
+    <Compile Include="MvtKinect\Segment\Swipe\SwipeUp.cs" />
+    <Compile Include="MvtKinect\Segment\Swipe\SwipeLeftSegment1.cs" />
+    <Compile Include="MvtKinect\Segment\Swipe\SwipeLeftSegment2.cs" />
+    <Compile Include="MvtKinect\Segment\Swipe\SwipeLeftSegment3.cs" />
+    <Compile Include="MvtKinect\Segment\Swipe\SwipeRightSegment1.cs" />
+    <Compile Include="MvtKinect\Segment\Swipe\SwipeRightSegment2.cs" />
+    <Compile Include="MvtKinect\Segment\Swipe\SwipeRightSegment3.cs" />
+    <Compile Include="MvtKinect\Segment\Swipe\SwipeUpGauche.cs" />
+    <Compile Include="MvtKinect\Segment\WaveLeftSegments.cs" />
+    <Compile Include="MvtKinect\Segment\WaveRightSegments.cs" />
+    <Compile Include="MvtKinect\Segment\ZoomSegments.cs" />
+    <Compile Include="RechercheTwitter.cs" />
+    <Compile Include="Tweet.cs" />
+    <Compile Include="Utilisateur.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Carreaux_noir_et_blanc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GettingStarted.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fenswall_bg01.jpg" />
+    <Resource Include="Images\fenswall_bg02.jpg" />
+    <Resource Include="Images\fenswall_bg03.jpg" />
+    <Resource Include="Images\fenswall_bg04.jpg" />
+    <Resource Include="Images\fenswall_bg05.jpg" />
+    <Resource Include="Images\fenswall_bg06.jpg" />
+    <Resource Include="Images\fenswall_bg07.jpg" />
+    <Resource Include="Images\fenswall_bg08.jpg" />
+    <Resource Include="Images\fenswall_bg09.jpg" />
+    <Resource Include="Images\fenswall_bg10.jpg" />
+    <Resource Include="Images\fenswall_bg11.jpg" />
+    <Resource Include="Images\fenswall_bg12.jpg" />
+    <Resource Include="Images\fenswall_bg13.jpg" />
+    <Resource Include="Images\fenswall_bg14.jpg" />
+    <Resource Include="Images\fenswall_bg15.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,89 @@
+﻿<Window x:Class="TestTwitter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FENSWALL" WindowStyle="None" WindowState="Maximized"  >
+    <Grid Name="SuperGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+         
+            
+        </Grid.RowDefinitions>
+            <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+            <StackPanel Name="searchPanel"  Grid.Column="1">
+                <Image Name="Chrono" Stretch="Uniform"/>
+                
+            </StackPanel>
+            <Grid Name="imageGrid"  Grid.Column="1" Grid.ColumnSpan="4">
+               
+                <Grid Name="grid6Images" Visibility="Hidden" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    
+                    <Image Name="ImageAffichee1" Grid.Row="0" Grid.Column="0"  Stretch="Uniform"/>
+                    <Image Name="ImageAffichee2" Grid.Row="0" Grid.Column="1" Stretch="Uniform"  />
+                    <Image Name="ImageAffichee3" Grid.Row="0" Grid.Column="2" Stretch="Uniform"  />
+                    <Image Name="ImageAffichee4" Grid.Row="1" Grid.Column="0" Stretch="Uniform"  />
+                    <Image Name="ImageAffichee5" Grid.Row="1" Grid.Column="1" Stretch="Uniform"  />
+                    <Image Name="ImageAffichee6" Grid.Row="1" Grid.Column="2" Stretch="Uniform" />
+                </Grid>
+                <Border>
+                    <Image Name="ImageAfficher" Stretch="Uniform" />
+                    
+                </Border>
+                
+                <Grid Name="GridMaxPhoto"   >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                </Grid>
+                <Grid Name="GridbackGround">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                </Grid>
+
+            </Grid>
+        </Grid>        
+    </Grid>
+</Window>
